@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <style> 
+        table { 
+            border: 8px solid purple; /* Thick border */ 
+            border-collapse: separate; /* Prevent border collapsing */ 
+            border-spacing: 10px; /* Proper cellspacing */ 
+            width: 70%; /* Optional: Adjust the table width */ 
+            margin: auto; 
+        } 
+        th, td { 
+            border: 2px solid purple; /* Border for table cells */ 
+            padding: 15px; /* Spacing inside cells */ 
+            text-align: center; /* Center the content */ 
+        } 
+ 
+        .nested-table { 
+            border: 10px solid red; /* Border for nested table */ 
+            border-spacing: 5px; /* Nested table cellspacing */ 
+            width: 100%; /* Adjust width inside main cell */ 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <table> 
+        <tr> 
+            <td>Left side of the main table</td> 
+            <td> 
+                <!-- Nested Table --> 
+                <b>Nested Table</b> 
+                <table class="nested-table"> 
+                    <tr> 
+                        <td>Nested Cell 1</td> 
+                        <td>Nested Cell 2</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Nested Cell 3</td> 
+                        <td>Nested Cell 4</td> 
+                    </tr> 
+                </table> 
+            </td> 
+        </tr> 
+    </table> 
+</body> 
+</html> 

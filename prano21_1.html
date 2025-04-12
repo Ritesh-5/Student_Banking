@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Student Registration Form</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f2f2f2; 
+            text-align: center; 
+        } 
+        .container { 
+            width: 400px; 
+            margin: auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        } 
+        input, select { 
+            width: 100%; 
+            padding: 8px; 
+            margin: 5px 0; 
+        } 
+        input[type="submit"] { 
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+        } 
+        input[type="submit"]:hover { 
+            background-color: #45a049; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h2>Student Registration</h2> 
+        <form> 
+            <label>Full Name:</label> 
+            <input type="text" required><br> 
+ 
+            <label>Email:</label> 
+            <input type="email" required><br> 
+            <label>Password:</label> 
+            <input type="password" required><br> 
+            <label>Gender:</label><br> 
+            <input type="radio" name="gender" value="Male"> Male 
+            <input type="radio" name="gender" value="Female"> Female<br> 
+            <label>Course:</label> 
+            <select> 
+                <option value="Computer Science">Computer Science</option> 
+                <option value="Engineering">Engineering</option> 
+                <option value="Business">Business</option> 
+            </select><br> 
+            <label>Hobbies:</label><br> 
+            <input type="checkbox" name="hobby" value="Reading"> Reading 
+            <input type="checkbox" name="hobby" value="Sports"> Sports 
+            <input type="checkbox" name="hobby" value="Music"> Music<br> 
+            <input type="submit" value="Register"> 
+        </form> 
+    </div> 
+</body> 
+</html> 

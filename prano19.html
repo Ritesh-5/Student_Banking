@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Table with Merged Rows</title> 
+    <style> 
+        table { 
+            width: 80%; 
+            margin: auto; 
+            border-collapse: separate; 
+            border-spacing: 10px; 
+            border: 2px solid black; 
+            text-align: center; 
+        } 
+        th, td { 
+            border: 2px solid black; 
+            padding: 10px; 
+        } 
+        th { 
+            background-color: #f4f4f4; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h1 style="text-align: center;">Table with Merged Rows</h1> 
+    <table> 
+        <!-- Table Header --> 
+        <tr> 
+            <th>Column 1</th> 
+            <th>Column 2</th> 
+            <th>Column 3</th> 
+        </tr> 
+        <!-- First Row --> 
+        <tr> 
+            <td rowspan="2">Row 1 and 2 Cell 1</td> <!-- Merged cell --> 
+            <td>Row 1 Cell 2</td> 
+            <td>Row 1 Cell 3</td> 
+        </tr> 
+        <!-- Second Row --> 
+        <tr> 
+            <td>Row 2 Cell 2</td> 
+            <td>Row 2 Cell 3</td> 
+        </tr> 
+        <!-- Third Row --> 
+        <tr> 
+            <td colspan="3">Row 3 Cell 1</td> 
+        </tr> 
+    </table> 
+</body> 
+</html> 

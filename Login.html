@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('bank.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .login-container .forgot {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 0.9em;
+    }
+
+    .login-container .forgot a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+      <div class="forgot">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript to handle form submission and redirect to index.html
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevent form from submitting the traditional way
+
+      // Simulate validation (you can add real validation here)
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Basic check (you can improve this with real authentication logic)
+      if (username === "user" && password === "password123") {
+        // Redirect to home page (index.html)
+        window.location.href = "index.html";
+      } else {
+        alert("Invalid username or password");
+      }
+    });
+  </script>
+</body>
+</html>
